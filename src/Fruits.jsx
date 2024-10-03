@@ -12,11 +12,11 @@ export default function Fruits() {
   //   ];
 
   const fruits = [
-    { name: 'banana', price: 1.0, emoji: '🍌' },
-    { name: 'grape', price: 2.0, emoji: '🍇' },
-    { name: 'honeydew', price: 3.0, emoji: '🍈' },
-    { name: 'mango', price: 4.0, emoji: '🥭' },
-    { name: 'orange', price: 5.0, emoji: '🍊' },
+    { name: 'banana', price: 7.0, emoji: '🍌', soldout: true },
+    { name: 'grape', price: 2.0, emoji: '🍇', soldout: false },
+    { name: 'honeydew', price: 3.0, emoji: '🍈', soldout: false },
+    { name: 'mango', price: 8.0, emoji: '🥭', soldout: false },
+    { name: 'orange', price: 5.0, emoji: '🍊', soldout: true },
   ];
 
   return (
@@ -37,6 +37,7 @@ export default function Fruits() {
             name={fruit.name}
             emoji={fruit.emoji}
             price={fruit.price}
+            soldout={fruit.soldout}
           />
         ))}
       </ul>
